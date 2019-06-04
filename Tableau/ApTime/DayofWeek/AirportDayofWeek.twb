@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1128.2033                               -->
+<workbook original-version='18.1' source-build='2018.3.1 (20183.18.1128.2033)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='apdow (2)' inline='true' name='federated.1wydlin048oumb1cfcml41rklpm3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='apdow' name='textscan.1d7dtf70tpp9m318xq62p10wvkga'>
+            <connection class='textscan' directory='E:/School/INFO7250/Results/ApTime/DayofWeek' filename='apdow.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1d7dtf70tpp9m318xq62p10wvkga' name='apdow.csv' table='[apdow#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+            <column datatype='real' name='F6' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.420732' measure-ordering='alphabetic' measure-percentage='0.579268' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='apdow' inline='true' name='federated.0ev1ua71wcihvx1665p961i3jphk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='apdow' name='textscan.1lc7qy30rha7ui19ccu8n1kme6gq'>
+            <connection class='textscan' directory='D:/School/INFO7250/Results/ApTime/DayofWeek' filename='apdow.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1lc7qy30rha7ui19ccu8n1kme6gq' name='apdow.csv' table='[apdow#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='string' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+            <column datatype='real' name='F6' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[apdow.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Airport' datatype='string' name='[F1]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Day of Week' datatype='integer' name='[F2]' role='dimension' type='ordinal' />
+      <column caption='Cancelled' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Delay' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+      <column caption='Total' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+      <column aggregation='CountD' datatype='real' name='[F6]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.445545' measure-ordering='alphabetic' measure-percentage='0.554455' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Cancellation Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='apdow' name='federated.0ev1ua71wcihvx1665p961i3jphk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ev1ua71wcihvx1665p961i3jphk'>
+            <column caption='SUM([Cancelled])/SUM([Total])' datatype='real' name='[Calculation_1257630200419479554]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='SUM([F3])/SUM([F5])' />
+            </column>
+            <column caption='Airport' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Day of Week' datatype='integer' name='[F2]' role='dimension' type='ordinal' />
+            <column caption='Cancelled' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Total' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1257630200419479554]' derivation='User' name='[usr:Calculation_1257630200419479554:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk]'>
+            <groupfilter function='member' level='[none:F1:nk]' member='&quot;ORD&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200419479554:qk]' scope='rows' value='Cancellation Rate' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200419479554:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200419479554:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200419479554:qk]</rows>
+        <cols>([federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk] / [federated.0ev1ua71wcihvx1665p961i3jphk].[none:F2:ok])</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Delay Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='apdow' name='federated.0ev1ua71wcihvx1665p961i3jphk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ev1ua71wcihvx1665p961i3jphk'>
+            <column caption='SUM([Delay])/SUM([Total])' datatype='real' name='[Calculation_1257630200418865152]' role='measure' type='quantitative' user:unnamed='Sheet 1'>
+              <calculation class='tableau' formula='SUM(F4)/SUM([F5])' />
+            </column>
+            <column caption='Airport' datatype='string' name='[F1]' role='dimension' type='nominal' />
+            <column aggregation='Sum' caption='Day of Week' datatype='integer' name='[F2]' role='dimension' type='ordinal' />
+            <column caption='Delay' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+            <column caption='Total' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_1257630200418865152]' derivation='User' name='[usr:Calculation_1257630200418865152:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk]'>
+            <groupfilter function='member' level='[none:F1:nk]' member='&quot;ORD&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200418865152:qk]' scope='rows' value='Delay Rate' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200418865152:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200418865152:qk]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ev1ua71wcihvx1665p961i3jphk].[usr:Calculation_1257630200418865152:qk]</rows>
+        <cols>([federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk] / [federated.0ev1ua71wcihvx1665p961i3jphk].[none:F2:ok])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='58'>
+    <window class='worksheet' maximized='true' name='Delay Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk]</field>
+            <field>[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{52492B40-08A3-4593-9E9F-B499EBA52AA6}' />
+    </window>
+    <window class='worksheet' name='Cancellation Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F1:nk]</field>
+            <field>[federated.0ev1ua71wcihvx1665p961i3jphk].[none:F2:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1E31D2FE-A01F-4E6C-B2B3-044D12049B04}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Cancellation Rate' width='192'>
+      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
+      0pPrkgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Delay Rate' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

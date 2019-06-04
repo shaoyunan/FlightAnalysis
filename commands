@@ -1,0 +1,43 @@
+/home/shaoyn/Documents/Data/project/input/2008
+/home/shaoyn/Documents/Data/project/output
+
+Preprocess
+1. MultipleOutputReduce 
+-> hadoop jar multipleoutputr-0.0.1-SNAPSHOT.jar multipleoutput.MyDriver /project/input/2008 /project/output
+--> hadoop fs -ls /project/output/preprocess/reduce
+--> hadoop fs -cat /project/output/preprocess/reduce/CarrierCancel-r-00000
+
+----------------------------------------------------------------------------------------------------
+
+2. MultipleOutputMap
+-> hadoop jar multipleoutputm-0.0.1-SNAPSHOT.jar multipleoutput.MyDriver /project/input/2008 /project/output
+--> hadoop fs -ls /project/output/preprocess/map
+--> hadoop fs -cat /project/output/preprocess/map/CarrierCancel-m-00000
+
+--------------------------------------------------------------------------------------------------------------
+
+3. CauseAnalysis
+-> hadoop jar flightanalysis-0.0.1-SNAPSHOT.jar causeanalysis.CauseDriver /project/input/2008 /project/output
+--> hadoop fs -ls /project/output/cause
+--> hadoop fs -cat /project/output/cause/part-r-00000
+
+-------------------------------------------------------------------------------------------------------
+
+4.TimeAnalysis (month/dayofweek/timerange/hour)
+-> hadoop jar timeanalysis-0.0.1-SNAPSHOT.jar timeanalysis.TimeDriver /project/input/2008 /project/output month
+--> hadoop fs -ls /project/output/timeanalysis
+--> hadoop fs -cat /project/output/timeanalysis/month/part-r-00000
+
+---------------------------------------------------------------------------------------------------------------
+
+5.AirportAnalysis
+-> hadoop jar airportanalysis-0.0.1-SNAPSHOT.jar airportanalysis.AirportDriver /project/input/2008 /project/input/join/airports.csv /project/output
+--> hadoop fs -ls /project/output/airport/origin
+--> hadoop fs -cat /project/output/airport/origin/final/part-r-00000
+
+---------------------------------------------------------------------------------------------------------------------
+
+6.CarrierAnalysis
+-> hadoop jar carrieranalysis-0.0.1-SNAPSHOT.jar carrieranalysis.CarrierDriver /project/input/2008 /project/output 2
+--> hadoop fs -ls /project/output/carrier/allbyyear
+--> hadoop fs -cat /project/output/carrier/allbyyear/part-r-00000

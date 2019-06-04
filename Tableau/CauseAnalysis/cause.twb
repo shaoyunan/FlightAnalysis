@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1128.2033                               -->
+<workbook original-version='18.1' source-build='2018.3.1 (20183.18.1128.2033)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='overall' inline='true' name='federated.03zzqt71lw9bkc0zupblk1qny9lr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='overall' name='textscan.16oj4g40pnqf7i1chg5xr0009cy2'>
+            <connection class='textscan' directory='D:/School/INFO7250/Results/CauseAnalysis' filename='cause.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16oj4g40pnqf7i1chg5xr0009cy2' name='cause.csv' table='[cause#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+            <column datatype='integer' name='F6' ordinal='5' />
+            <column datatype='integer' name='F7' ordinal='6' />
+            <column datatype='integer' name='F8' ordinal='7' />
+            <column datatype='integer' name='F9' ordinal='8' />
+            <column datatype='integer' name='F10' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F10</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F10]</local-name>
+            <parent-name>[cause.csv]</parent-name>
+            <remote-alias>F10</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107492370:qk]&quot;' value='On_Time' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107516947:qk]&quot;' value='Cancelled' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107521044:qk]&quot;' value='Carrier_Delay' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107529237:qk]&quot;' value='Diverted' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107627547:qk]&quot;' value='Late_Aircraft_Delay' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107631644:qk]&quot;' value='NAS_Delay' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107643933:qk]&quot;' value='Security_Delay' />
+          <alias key='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107648030:qk]&quot;' value='Weather_Delay' />
+        </aliases>
+      </column>
+      <column caption='Total' datatype='integer' name='[F10]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Year' datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+      <column caption='On_Time' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+      <column caption='Cancelled' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column caption='Diverted' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+      <column caption='Carrier_Delay' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+      <column caption='Weather_Delay' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+      <column caption='NAS_Delay' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+      <column caption='Security_Delay' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+      <column caption='Late_Aircraft_Delay' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[F3]' derivation='Sum' name='[diff:sum:F3:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[F3]' derivation='Count' name='[pcto:cnt:F3:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[F3]' derivation='Sum' name='[pcto:sum:F3:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[F3]' derivation='Sum' name='[pcto:sum:F3:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[F10]' derivation='Sum' name='[sum:F10:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F3]' derivation='Sum' name='[sum:F3:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F4]' derivation='Sum' name='[sum:F4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F5]' derivation='Sum' name='[sum:F5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F6]' derivation='Sum' name='[sum:F6:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F7]' derivation='Sum' name='[sum:F7:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F8]' derivation='Sum' name='[sum:F8:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F9]' derivation='Sum' name='[sum:F9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.340659' measure-ordering='alphabetic' measure-percentage='0.659341' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[diff:sum:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[pcto:cnt:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[pcto:sum:F3:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[pcto:sum:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F3:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107516947:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F2:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107492370:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F9:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107627547:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F6:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107648030:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F8:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107643933:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F4:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107529237:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F7:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107631644:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107521044:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F10:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;美国&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Overall Percentage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>&lt;</run>
+            <run bold='true'>Sheet Name</run>
+            <run bold='true'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='overall' name='federated.03zzqt71lw9bkc0zupblk1qny9lr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03zzqt71lw9bkc0zupblk1qny9lr'>
+            <column caption='SUM([On_Time])/SUM([Total])' datatype='real' name='[Calculation_2805461094107492370]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F2])/SUM([F10])' />
+            </column>
+            <column caption='SUM([Cancelled])/SUM([Total])' datatype='real' name='[Calculation_2805461094107516947]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F3])/SUM([F10])' />
+            </column>
+            <column caption='SUM([Carrier_Delay])/SUM([Total])' datatype='real' name='[Calculation_2805461094107521044]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F5])/SUM([F10])' />
+            </column>
+            <column caption='SUM([Diverted])/SUM([Total])' datatype='real' name='[Calculation_2805461094107529237]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F4])/SUM([F10])' />
+            </column>
+            <column caption='SUM([Late_Aircraft_Delay])/SUM([Total])' datatype='real' name='[Calculation_2805461094107627547]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F9])/SUM([F10])' />
+            </column>
+            <column caption='SUM([NAS_Delay])/SUM([Total])' datatype='real' name='[Calculation_2805461094107631644]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F7])/SUM([F10])' />
+            </column>
+            <column caption='SUM([Security_Delay])/SUM([Total])' datatype='real' name='[Calculation_2805461094107643933]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F8])/SUM([F10])' />
+            </column>
+            <column caption='SUM([Weather_Delay])/SUM([Total])' datatype='real' name='[Calculation_2805461094107648030]' role='measure' type='quantitative' user:unnamed='Overall Statistics'>
+              <calculation class='tableau' formula='SUM([F6])/SUM([F10])' />
+            </column>
+            <column caption='Total' datatype='integer' name='[F10]' role='measure' type='quantitative' />
+            <column caption='On_Time' datatype='integer' name='[F2]' role='measure' type='quantitative' />
+            <column caption='Cancelled' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column caption='Diverted' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+            <column caption='Carrier_Delay' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+            <column caption='Weather_Delay' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+            <column caption='NAS_Delay' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+            <column caption='Security_Delay' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+            <column caption='Late_Aircraft_Delay' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+            <column-instance column='[F6]' derivation='Sum' name='[sum:F6:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107492370]' derivation='User' name='[usr:Calculation_2805461094107492370:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107516947]' derivation='User' name='[usr:Calculation_2805461094107516947:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107521044]' derivation='User' name='[usr:Calculation_2805461094107521044:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107529237]' derivation='User' name='[usr:Calculation_2805461094107529237:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107627547]' derivation='User' name='[usr:Calculation_2805461094107627547:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107631644]' derivation='User' name='[usr:Calculation_2805461094107631644:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107643933]' derivation='User' name='[usr:Calculation_2805461094107643933:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2805461094107648030]' derivation='User' name='[usr:Calculation_2805461094107648030:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107516947:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107521044:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107529237:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107627547:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107631644:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107492370:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107643933:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107648030:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107516947:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107521044:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107529237:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107627547:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107631644:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107492370:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107643933:qk]&quot;</bucket>
+              <bucket>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[sum:F6:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='1160' />
+            <format attr='cell-h' value='1160' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107516947:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107521044:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107529237:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107627547:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107631644:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107492370:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107643933:qk]' value='p0.00%' />
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107648030:qk]' value='p0.00%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[Multiple Values]' value='p0.00%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]' />
+              <size column='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2193922996520996' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>Carrier_Delay</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]</field>
+                      <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107521044:qk]&quot;</value>
+                    <value>0.072134635521735602</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='106' y='-59' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='2.23607' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>Late_Aircraft_Delay</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]</field>
+                      <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107627547:qk]&quot;</value>
+                    <value>0.065269058540887478</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='165' y='29' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>On_Time</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields />
+                      <y-fields />
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]</field>
+                      <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[Multiple Values]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot;[federated.03zzqt71lw9bkc0zupblk1qny9lr].[usr:Calculation_2805461094107492370:qk]&quot;</value>
+                    <value>0.81208266994597456</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-177' y='-25' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>Weather_Delay</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.494828'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.225862'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-173' y='-34' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>NAS_Delay</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.705342'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.37402'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='133' y='37' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>Cancelled</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.513793'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.217241'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='-24' y='-86' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>Diverted</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.598498'>
+                  <node-reference />
+                </x-coord>
+                <y-coord cell-offset='0.230683'>
+                  <node-reference />
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='190' y='-25' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Overall Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[Multiple Values]' type='size' />
+          </strip>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[:Measure Names]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F1:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F2:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F3:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F4:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F5:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F6:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F7:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F8:ok]</field>
+            <field>[federated.03zzqt71lw9bkc0zupblk1qny9lr].[none:F9:ok]</field>
+          </color-one-way>
+        </highlight>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{815CD03D-4A45-403C-AE64-D4D982176917}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Overall Percentage' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAenElEQVR4nO3deXCc933f8ffzPHsDu7hBnAR4gxBIkAQlkSYtU/IpqSMlUdXaTm3Xmbju
+      MePOpO008SQTTd2kk9adOu40TupxWqeeeOL6aBLLlihSpAQe5gUe4oGLuAjiPvY+n+f59Q8Q
+      K4IEQBzPYgnu7zWjkQQ8u/td7PPZ5/f7Pb/n9yhCCIEk5Sg12wVIUjbJAEg5TQZAymkyAFJO
+      kwGQcpoMgJTTZACknCYDIOU0GQApp8kASDlNBkDKaTIAUk6TAZBymi3bBUirYxgGpmlmu4wV
+      s9lsKIqStdeXR4B1br3PZs92/TIAUk6TAZBymgxAjjJNk8uXLxMIBJb8mEgkQl9f30M/HxgY
+      WLf9ENkJzlGnTp1i165dKIpCW1sbmqZRVlZGf38/VVVVqKrK0NAQmzdvpr29nZaWFmKxGIOD
+      g7hcLm7fvk1LSws3b96ko6OD119/HVVdf9+n669iadVmO56FhYXk5+cDcPnyZQYHB2loaGBg
+      YIDu7m5aWlo4c+YMqVSKS5cupR/f2tpKMBjk1KlT2O126urqsvI+rCCPADlIURR8Ph8nT56k
+      pqaGzs5O3G43mqZht9ux2WyYpsmFCxcoLy8nmUyydetWFEVBVVUqKioQQlBXV8fly5dJJBI8
+      ++yzq64rG0O6ilwVYn3TdT3rQ4mroWlauumUjQDIJpCU02QApJwmAyCtOyMjI1y5cmXBpp8Q
+      grGxsUWfY2pqilOnTsk+wHpnmmZG+wCJRAKn05mx51dVNT0XaCl9gHA4zKVLl9i/fz+RSIRb
+      t27R2NjI6OgomqaRTCZxu924XC40TaOnp4fm5mba29upra2lsrISgAsXLtDU1CSPAOudqqpo
+      mpaxf0zTxDTNjD3/cifCBQIBqqurycvLSz/26tWrtLe3s2PHDrq6uti6dSsDAwOcPXuWaDTK
+      9evXmZiYoKKi4qG/nRwGlRbl8XgIhUIUFBRkuxQAKioqOHr0KGNjYxiGgaIoOJ1OamtrUVU1
+      /W+73U5lZSWGYVBTU4PP55sTNk3TOHPmjGwC3e9J+FNkYmpxIBB4aAfKhEwPg46MjNDd3Y2i
+      KOzZs2fmKCID8KFUKpXtElbl/jF1KyUSCUzTxO12W/7c95PnAaTHktPpJJFIZLuMjJABkJZE
+      VVUMw8h2GZaTnWBpSTweT8b7SLNzjTIhkUiQSqXSk/9mySPACkWjUcbHx+np6cHv93P37t15
+      d5BYLIZhGNy8eXNJ7duOjg5aW1sZHR1N/0wIwY0bNyyr3TAMjh07xsjICAC3b9/m+PHjBINB
+      3nrrLbq6ujhz5gxTU1PcuXMHmLl2NxqNznmeiYmJ9H9PTk7S19dHIpHgypUr6f83TZNQKLSk
+      uqwc0lVVlVQqRSQSIRQKpScAPridPAKskKZpdHZ2AjA9PU08Hicej9Pf38/u3bvp6upCCMH4
+      +DiFhYUYhsH4+DgbNmwgGo0SCATYsmUL3d3dPPPMM+lvpomJCQ4ePMiJEydobGyko6ODhoYG
+      pqen6e3t5fbt22zbtg3TNNOzNDVNW1bt165dY8+ePVy7do2Kigo6OzvxeDzcvHmTqakpdu3a
+      RSKR4J133sFms1FSUpI+AgghUBSFiYkJfvazn/GVr3wFgPfffx+n00lvby8Oh4NwOExnZycd
+      HR2UlJTQ0tKS8VEkIQSJRIJEIoEQApfLhdfrXfR15RFghRwOB7qu43A4iMfj2O12rl69iqZp
+      9PX1kUql6OnpYePGjezbtw+Xy8Xhw4cZGxvj+vXrRKNR+vv72bRp08OHZVXF4XBw5coVbDYb
+      g4ODwMzRJJlM4vf76enpYXJyck6TIRKJ4Pf7HzmaNXtia5aiKNhsNgoLC3n99ddpa2vD5XJh
+      t9upqqpKH33cbjexWAyA0tJS6uvr5zxvKBSioaEBn8/HjRs3iEQiDA0N0d/fP+eIZqXZnT4Q
+      CBAMBhFC4PP5KCwsxOVyPTJ08giwQoqi4HK5KC8vZ2hoiKqqKlwuF36/n6KiIiYnJykuLqa8
+      vJzLly9TWFgIzFyEUl9fj6qqlJWVUVxcPOd5VVXl1KlTFBcXU1lZydDQEJWVlfj9fqanp3E6
+      nXi9XiKRCDU1NXM+4Nmzo5FIhGg0it1ux+12P7QTNDc3c/z4cZqamhgeHmbjxo0MDg6yadOm
+      9JGnoKCAxsZG2traaGlpAcButxONRvF4PAwNDdHb20tnZyderzd9PcH09DR37tyhrq4uHaJz
+      586Rl5dn2d9eCEEymSQej6frWul5Cnke4D7ZOg9w+/ZthoeHsdlsPPPMM4/sCBqGQVtbG/v3
+      73/o7ObsY4UQ6Tawpmnk5eUtu6k0n2AwaNlzjYyM8MEHHyCE4FOf+hRtbW10dHRw8OBB2tvb
+      2b59Ozdu3KCpqYlYLMaWLVuIx+MIIXA6nUv6hn8UGYD7PKknwgzDIBqNYhgGbrcbh8Px0I6j
+      mzrRZBR/bJqx0AjhZAg1AYXjKZLxCHoyQYe6DcXmoKrIScLUyHM5cDlsbC61UVbgBkceirq8
+      RkV3dzc2m436+nqEEJw8eRKPx8Pg4CAbN24kFAoRjUZxOBw0Njamr1dejdn+UzKZlE2gXKBp
+      Gl6vFyEE8Xicaf80KTNJ+9QNbk92MRwcYjw8ij/mJ2l8eMLLm/DwbFcegpkvhqNairjiorm+
+      kKt9/vR2r3lO8uuFbSh5pajeStSSraglW9Fq9qMW1oIy/6Q3IQT9/f288MILGIZBMBjE6/Xi
+      8/nw+XxMTk7S0NBAe3s7qqoyOTlJTU3Nst777Pf7/Z3j2T5Wfn6+DEAuMIXJoP8OHWM3uTly
+      nc6xW8STMeq8m1EUldHoMFOJiYcel1J15hsnmQonKM53MBVOAlCiBSEVRfgHMPwDGHfOpbdV
+      8ivQqveh1Tw98++SLenfCSHSo0MjIyOYpsmWLVtwOBz09fWlV6147rnn6OrqYvv27Ut6v7NB
+      TyaT6VErp9M5bz9BNoHus17XtpmlKEr6AxZCMBoa5uLAOd6//S53g4PznqdQUKjwVFHkLCGc
+      CjEcHSRlznzjO3QHhzuLUMyZo8JR7QhxxQXA7roCrvUHAMHXC35Ao6N/CQVqqOU7se94CduW
+      52eODvdEo1FcLteKmjf3N2lM00zv8LPXMSzWT5BHgPusx3VtHhROhDjXf4ZTPSfpmehO78wL
+      EQiGo3cZjt4l3+5la8EOQOFOuI+EEcdUYL7ubiimp/+7SF3aiS6EgTl6ncTodRKnv4VWuRt7
+      02vYNh/B4/Eu+T0+uMPf36RZ7mcoA/AEEELgj01ztOMXnOh6h2B86au93S+cCnFr+jqaolGV
+      V0thXhHeckF0uO+hbXvHIgComBRrweW/mJHEGLyIMXgRxVOMfdfr2Js/j5pXMmezhdrwdrt9
+      RTv8g2QTaJ0bDQ3z5o2/5f3b75I0kpY+tyIUXhjeToHLQ2Cod04TaJZPCfNnpd+y5gXtHhzN
+      n8XW/HlSjsJ5mzSxWIx33nmHmpoaWlpa6OrqoqOjg6eeeoozZ87w6quvcvr0aWpra9F1Pd2P
+      WIg8AqxT/tg0P77yQ1p7TpKyeMefJRRBNBaAqYXP4pas5Nt/IakoyYt/SfTWW6ibjpB/8Cto
+      vrI5m/T393PgwAHa29sB2Lx5M2NjY9jtdjZv3oyu6+i6zsWLF1FVlYKCgkVXrpMBWGd0I8V7
+      t9/lx1d+SCDuf/QDVvt66uINhBLVwgDcY4sMwfW/JtZ3DOdHvoZt5z9In1/wer309vYSj8dJ
+      JBKcP3+esrIySktLaW9vJxKJsHfvXnp6etJTMWQAnhDd4518//x3uT3ZtWavaTwiAGVa5kIo
+      wmPEj/4+2o2f4Tzyu2jlO6mpqSGRSLBr1y7C4TB1dXWMjY0RDAYpLCwkGAyyadMmSkpKGB4e
+      pqqqatHXkH2AdSChx/nR5b/mrfa/X/PrlpvvlFMamGlizdcH+M28o7zoOZ/5QlQbtt1fxnX4
+      X6LY7ZY9rTwCPObuBgb57pn/Qef4ray8fsq2+FVglvYBFiEMnckfH+NCbAsfO/ICxR6PJc8r
+      A/CYEkJwtu8U3z//XUKJtdnJ5rN4H0BQoq5syHW5kuPFXKx6hl8pJjfOneK1p5ppKCtf9WQ4
+      GYDHUMpI8VcXvse7nW8jyG4L1VhkmN2GgVeNLryBVTXEHPTGmzh/eBcoCqFEgr+6fIGP1m/m
+      09sa0FZxLkAG4DETSYT589Pf5tLgGrSrlyClLTw9xKHoFKiRjL6+MBWmhzbx7qGDGPdNwTaF
+      4L3e20zHory+aw8Obe6uHAqFOH/+PM8++ywul4vW1lbi8Xj62of6+nqGh4flFWGPE39smm+e
+      +OPHZueHxUeB8pUoTkVf8PerJQTER0pp3XaIqaLCebe5NjLM9y9dIJqcey7kxIkT6XVTbTYb
+      R44cSU+p3rBhA0NDQ9hsNhmAx8VkZII/OvoHdIzdzHYpc6S0hQOQ6Q6wEXVxS93HzW1bFt2u
+      e2qC7106RyAeS/9MCMHBgwdpa2sDoKenh02bNmGaJpOTkxw6dIixsTEZgMfBUGCQP/zlv+du
+      YDDbpTxksSNAJjvAwlQYH9nGuwcPIJbQxh8M+PmL82fw37tm+dChQ7S2ttLU1MT4+Dgwc9Y4
+      HA6ze/duHA4H+/btk32AbJuIjPNfT/wxU9HJbJcyL32RI0Bpho4AQkBkuIJ39hwh7nI9+gH3
+      TEaj/OWlc3z1mYOUlpby4osvpn9XVjYzpeL+RX7r6+vlESCbwokQ/+3knzAcHMp2KQvSVQOY
+      f6ixVM3MWWA9nMfFgo8wUF257MeOhkP8n8sXGZuaSl8/vBgZgCxJGSn+9L3/TO9kd7ZLWVRS
+      S6Is0FAo0pZ4HcAyCF1lwN/EuT3NsMIx/t7pKd7qv40hBMFgkEAgQCqVmjcMsgmUBYap853T
+      f8qNkQ+yXcojGYoJisrDpyMEpRb3AYSAwHAtR/d/jNQqpzvcGB3BbbPzWlMzCjNXnEUiEWw2
+      25yba8gAZMEvb/2cX/WdynYZSyIAXTXRHpgR4SCFV43N+5iV0gNe3q85wuQCQ57LdfHuHWoL
+      izhQW0deXh5CCHRdJxic6bs4nU7ZBFprnWPt/PjKD7NdxtIp858NzlPjuBTrrkMwkzZuJffz
+      QcP2FTd95vOLjpvcDc4cqRRFwW63U1BQgM/nm7m6zLJXkh4pnAjzndPfmrP0yONOIOYdCvUq
+      URwWnQQTAibHNnGi5dCShjyXI6Hr/OjaZRL63FoVRcHtdssArBXDNPjer/6M0dBItktZtvmG
+      Qq0cAk1MFfHO9k8Syrdu+cT7jYRD/N2t6/P+TgZgjZzufY9z/WeyXcbyKfOfDCu2qANsJuxc
+      cn6Uno3LW/BquS7evcMHI8MP/VwGYA0E4wH+pu0H2S5jxeabDlG81KVQFiEEDE7v5HRzi6Xt
+      /oW82XGT+APLX8oArIGfXfsR07GpbJexYvN1gsstuBQyNlHKW7s+RdLhWPVzLcV0LMrJ3rnn
+      XWQAMqxnopvjnW9nu4xV0dWHp0Sv9iSYHnNysvTTjJWWPHpji6gYhEbeJBX7cM6VPA+QQaYw
+      +cGl/4VuZm7K8FqY6QTPbaKsZhqEMBU6Ey1cad65ysqW/IrU2ob4hOcUZdok8QE/tu3fmLkx
+      yBpVkJPO95+lfdS6e3tly4OXRTpIkr+Kk2D+qRqONR/BtOAeA4sT+NQwH3OfpcFxG1WZeR+p
+      QBupQBuOwhYZgEwxTINf3Py7bJdhCV0zuX+F0EI1jI2VLSScing4Vv0Zgr6lrwW6EnZStLiu
+      cdB9aZ7zFYL4yI+xF8jp0Blzffgq3RMd2S7DEg8eAYq0MOoKAiAMlSvKITo2bbKqtIeomGy1
+      93LEc5aiRc5V6MEr6OFbMgCZYAqTv7/+02yXYZkHT4QVq8Flj1oKAaPBzZxsOZShIU9BuTbB
+      c+5zbLYPLOkl4sM/kgHIhK7xdtofs0sbV+PBUaCVrAaXiPj45eaXSdxbs99KHiXKAVcbe103
+      sClLv5t9yn9BBiAT3r71JqZY3zfbuJ+hzl2cZbknwUxd5VT+J7lbUWFpXSoGu5ztHHJfWOHy
+      LKYMgNX8sWkuD17MdhmWmjsVYnmLYQkBPfHdXNi7x8KKBHW2QZ7znKNSG1tVi0oGwGJtgxdI
+      rKPZnkthaCDu28mWc0OMcKSUX+54EcNmza5WoAY57L7ATkcXmrL6o6wMgIWEEPyq73S2y7Dc
+      /TfLUxEUqeElPc5I2The+jIBn2/VNWgYPOtq42nXVVyqddchyABYaCIyzs2R+afdrmdCEZjq
+      zCHAoaTwLaG9LQRcFwe4Xr9jta/OdnsPz3nOUZKBpdhlACx0trcVUyx9FGI90TUTjKXfEGMy
+      Xs3xnS+sYshTUKpN8YLnNHW2QdQMTRaVAbCIEILrI9eyXUbG6Kq4F4BHd4D1pJNfVL9K1O1e
+      0Wu5lDiH3BfZ7bxp2VVnC5EBsEgsFaN38na2y8iY2ZGg4kfMAhUCzrg+zkD58i9wUTDZ5Wjn
+      o57z5K/BqtMgA2CZgek+IsmldQ7Xo9lVosu16QW3EQIGU9s4vf0jy2z6CGpsw3zcc5oN2vha
+      XBuTJgNgkVujT17n936zF8UsdlPsuJ7Pm3WvYtiWOstT4FXDPOc+x05HtyXDmsslA2ABIQS3
+      noBpz4uZnQ+0UB/ANFWOF7/MROHSLnCxk2Kf6wMOuNosHdZcLhkACyT0BAPTfdkuI6N0VaBi
+      LngOoENt5mrV7iU8k2CLvZ/nPWcyMqy5XDIAFggmAkQST277H2aGQZ1Kat45NwG9hLe2vvyI
+      NX1mhjWfd59l0xJna64FGQALjIfHMJ7Q8f9ZuipwKwk8ytxpHqap8ssNv0bEvfCaPm4lxjOu
+      K7S4PsCe4WHN5ZIBsMBw4G62S8g4XRMUaaH0ZYUwM+pz0X2Y7vKt8z5GxaDR0cVznnN4M3wv
+      sZWSAbDASOjhBZeeNLpmUvbAhfCjag0naj8+7/Y1tiGec5+j1v54/21kACyQC0cAQ517Eiwh
+      nPy85jdI2eeu6eNVwnzUc45GRyeasvjNKR4HMgAWCCbW5mbR2ZTSzPQQqBDwfvEnGfF+eAcX
+      GylaXB/wtOsqeRYvm74aQoAJ6AJSJkRMhUAK/LpC2JDLolgioT9Z8//nYyiCEi2IAG67dnCh
+      /MC93wg22wf4mPss5ba1Wf3u/hu9GEBEh4ChEEgpBA0I6QoBXSGoQ9BQCOkKMRNiBpgPrG8k
+      A2CBWHJt5q1kk6lCkRYgquTx8+rXMFWNEnWaI54zbHX0W/paupjZWSOGQvjeDu2/t0OHjHs7
+      tq4Q1BVCBogF7mG2FDIAqySEIKY/Pof8TDEVQZ4txtsbXiPlcnDEdYa9rutLnq1pCoibkDBn
+      duygzr1v6Zlv7ZmdWcGfgrChYAgwxMPf2FaTAVillJHEMJ/scwAwMxv0uq8ZZYOd33L/DT4t
+      jHmvXZ0SEDU+bG6E9Jk29kw7e2bnDutKOgBGhnfq5ZABWKWkkUI8QStALMRUoL0kSV7kPX4S
+      UAgadsL6h82UTH9TZ4oMwCrZNTuKkgOLbCtwIRjmSdtlcuCTyyynzYlNfbJ2ilwiA2ABp836
+      1c6ktSEDYAG3fWXXvkrZJwNgAZcMwLolA2CBQndRtkuQVkgGwAIVvqpslyCtkAyABap8mb3H
+      rZQ5MgAW2ODdkO0SpBWSAbBAWf4GNCXTN3yTMkEGwAI+l498Z362y5BWQAbAAk6bi5rCumyX
+      Ia2ADIBFdlY8le0SpBWQAbBI44ambJcgrYAMgEXqijfjtnuyXYa0TDIAFnHZXGwumX99HOnx
+      JQNgEUVR2Ff7dLbLkJZJBsBCz278CGouXBzzBJGfloWKPMXslJ3hdUUGwEKKovCxrS9kuwxp
+      GWQALLanugWPfeGVkqXHiwyAxfKdXpqr92a7DGmJZAAy4KXGV3NjpYh1TlNtMgCZsLlkK7sq
+      m7NdhvQIT288IAOQCYqi8HLjr2W7DGlRCi81viIDkCmNFU1sK9uR7TKkBeyu2sOWkm0yAJmi
+      qRqvNv3DbJchzUNRFF5p+g0URZEByKS9Nft5qmIptw6V1tLTtQfSJyxlADJIURS+8PRvYdcc
+      j95YWhMeex6f3fdFlHv3aZUByLCNRfV8uuGlbJch3fNS4ytU+O6/tVMWCCEwzfW7pLiiKKiL
+      3hR6rleaXuNs3ykmIxMZrEp6lOqCWl5+6tU5P8vKEWA2AOv1H8NY3g0x8p1ePr/vSyjrdA39
+      J4GCwudavojT5przc9kEWiPP1h/io1uOZLuMnPWJHZ9hX83D12vIAKwRVVH5p8/8Myp91dku
+      JedsLtnK51u+NO/vZADWkMvu5mvP/Vt5P4E1lOfI558f+tcPNX1maW+88cYba1vSTB9AiMzf
+      Rdw0TY4fP05/fz+JRAKPx4Pf78fj8aSHwfr6+vjpT3+KEAJd13G73fj9fgzDIBaL4XQ6mZiY
+      wOVyzen4atrKVoIrdBeR7/By+e5FS96jtDAFhd8++K9oqlz4XIwi1mJPfMBKOpIrEQqF6O7u
+      Zu/evbS2tjIxMUFFRQWVlZXU19entzt16hSHDh3i9OnTaJqGy+Wis7MTt9tNTU0Nuq5jmiYH
+      DhxI1y+EwOl0poO0HIZp8L1ffYeT3ceseqvSPF5qfIXfbPnyop/RE31zK4fDweTkJIFAAICy
+      sjK2bt3K1NTCdzTXNI2GhgZisRimaTI+Po7b7aakpCS9jaqqGIZBKBTCNE00TcPj8Sz5qKCp
+      Gl9+9quEEkEu3Tm/ujcpzetA3SE+t+9Lj/yCeqKPAADj4+MMDAywZ88e/H4/+fn5jI6OMjAw
+      AEBTUxOmaVJUVMTU1BSqquLz+dKh8Xq9tLW1sX37doqKPrwRht1uBz4c0o1Go5imiaIoOJ1O
+      HA7HI//4sVSMPzn2H+gcv5Whd5+bdlft4XeOfB2H7dFn4J/4AGTKbAAeZJomiUSCZDKZ3s7p
+      dC54dAjEAvzHo7/P3cCdjNWaS7aWbuffffwP8Dq9S9peBmCFFgrAg5LJJPF4PN3pz8vLQ9O0
+      OUeHsfAo/+mdNxgNDWek1lxRU1jL7378DYrzSh698T0yACu01ADcb7appOs6iqJgt9txu90o
+      isJUdJJvvvtH9E31ZKDaJ9/2sgb+zfNfx+vyLetxMgAroCgKNtvqxg+EEKRSKWKxGDBzZIgb
+      cf77+9/kg+ErVpSZM57eeJB/cehrK7pbZ1YCIM01+xEoikJCj/Pnp7/Nuf4zWa5qfXh+2yf5
+      4tO/veKTizIAjyHd0PnJ1R/yt9d/ku1SHluqovJq02u81vy5Zc3MfZAMQIYMDQ1x48YNYKYj
+      XFBQwOHDhwmHw7S2trJz507GxsbSTalIJEJxcTE7duzAZrMhhODK3Uv8xelvE0wEs/lWHjvF
+      nhK+euhrlqy8IecCZUhVVRXV1dU0NjZimibhcBghBNeuXSOZTDI1NcVTTz1FOBwmGAwyOjpK
+      W1sbV69eBWaaQ3tr9vONl79JwwZ595lZe6pb+MZL/8WyZWdkADLENE2GhoaorKyksbGReDxO
+      PB6nsLCQjRs3Mjk5STweJxKJsH//frxeL1VVVQSDc7/ty/LL+b1P/CG/vvsfoam5eydKp83F
+      Z/d+gd95/vco8hRb9ryyCZQhpmkSiUTwer309fVhs9nIy8vD5/PR3d1NdXU1PT09JJNJdu3a
+      RTKZJJFIoKoqxcXzf8AD033873P/k/axm2v8brJHQaG5eh//ZP+XqSqw/obkMgDrjClMzvS2
+      8qPLP2AiMp7tcjKqwlvJP973hZkV3DK01KQMwDoVSYT5fx/8X050HSOaimS7HEt5nT4+1fAy
+      n2l4mbwM339ZBmCdm4pM8Hb7mxzrfJtYKprtclbF6/Ty4s5XOLLtExS6ix79AAvIADwhQvEg
+      J7qPcbT9Taaik9kuZ1mKPaV8uuFlXtj2yYx/4z9IBuAJk9ATXLl7ife6j3Fz5DpJI5ntkubl
+      tLnYU93CwfrDNFfvXfCSxUyTAXhCCSGYjk5xafA8Z3tb6Z7oRDf1rNZk1xxsK9vBgbpD7Kt9
+      mmLP0mdtZooMQA4QQjAWHqVrvJ2bI9e5NXqD8fAopsjs4mSqorLBW0ljRRONG5rYWraDsvzy
+      jL7mcskA5CAhBBORcTrH2+mf6mU4eJex0Cjj4THiemxFz+mx51HmLacsr5zqglpqi+rYUb6T
+      krxSi6u3lgyABMycX0gZKQIxP+PhUaKpCAk9QTQZJa7HSaTioIDL5sJt9+CwOclz5OG2uyn3
+      VuBzFmDTbOvuPskyAFJOW19xlSSLyQBIOU0GQMppMgBSTpMBkHKaDICU02QApJwmAyDlNBkA
+      KafJAEg5TQZAymkyAFJOkwGQcpoMgJTTZACknCYDIOU0GQApp8kASDlNBkDKaTIAUk6TAZBy
+      mgyAlNNkAKScJgMg5TQZACmnyQBIOU0GQMppMgBSTpMBkHKaDICU02QApJwmAyDlNBkAKafJ
+      AEg5TQZAymn/HzbDGYpmF0cnAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
